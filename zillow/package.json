@@ -1,0 +1,17 @@
+{
+  "name": "zillow_mock",
+  "version": "1.0.0",
+  "description": "Hack reactor front-end capstone project. Four of our team member made a static mock page of the zillow's item detail page via react and express.",
+  "main": "./server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Huh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "http-proxy": "^1.17.0",
+    "nodemon": "^1.18.6",
+    "sass": "^1.14.3"
+  }
+}

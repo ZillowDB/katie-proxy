@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zillow: Real Estate, Apartments, Mortgages & Home Values</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <div class="logo-img">
+                        <svg viewBox="0 0 100 100"><path d="M30 48.8c4.9-5.1 22.6-21.5 22.6-21.5c-9.2 2.2-18.8 5.1-22.3 6.7l-5.2 5.3c4.3-0.9 5.7-1.1 8.9-1.6L30 48.8z M62.8 23.2c0 0-15.6 15.8-18.1 18c4.8-1.7 14.5-3.8 20.7-4.1c0.7-2.2 1.5-3.8 1.5-3.8l8.3-0.8C75.2 32.5 68.9 27.4 62.8 23.2z M27.3 56.3c1.8-0.8 18.6-6.4 34.1-7.3c0.3-1.3 2-5.7 2.3-6.9c-16.1 1.1-29.1 6-34.4 8.4L27.3 56.3z M52.4 16.3 c-2.8 1.3-10.8 7.5-15.1 10.7c5.2-1.8 17.8-4.6 24.3-4.7C59.6 20.9 53.9 17.1 52.4 16.3z"></path></svg>
+                    </div>
+                    <div class="logo-txt">
+                        <svg viewBox="0 0 100 100"><path d="M61.2 81.8c1.1-1.2 1.5-2.6 1.5-4.7c0-2-0.4-3.3-1.4-4.5c-1.1-1.2-2.4-1.8-4.2-1.8c-3.3 0-5.5 2.6-5.5 6.4 c0 3.9 2.2 6.4 5.5 6.4C59 83.5 60.3 82.9 61.2 81.8z M58.6 73.7c0.4 0.6 0.7 1.6 0.7 3.3c0 2.9-0.6 4.1-2 4.1c-0.6 0-1.3-0.3-1.6-1 c-0.3-0.6-0.4-1.7-0.4-3.1c0-1.2 0.1-2.1 0.3-2.7c0.3-0.8 0.9-1.2 1.7-1.2C57.8 73.1 58.3 73.3 58.6 73.7z M76.8 83.2L80.4 71H77 l-0.9 4.4c-0.3 1.6-0.6 3.5-0.7 4c0 0-0.4-2.1-0.9-4.3l-1-4.1h-3l-1.2 4.1c-0.6 2.1-0.9 4.3-0.9 4.3S68 77 67.7 75.5l-1-4.6h-3.3 l3.4 12.3h3l0.6-2.5c0.3-1.1 0.8-3.3 1.1-4.3c0.2-0.9 0.2-1.1 0.3-1.6c0.1 0.5 0.1 0.6 0.2 1.2c0.1 0.8 0.4 2 0.7 3l1.1 4.2H76.8z M45.8 83.2h3.3l0-17.7l-3.3 0.7L45.8 83.2z M39.4 83.2h3.3l0-17.7l-3.3 0.7L39.4 83.2z M33 83.3h3.2l0-11.5L33 72.5L33 83.3z M34.6 71c1.1 0 2-0.9 2-2c0-1.1-0.9-2-2-2c-1.1 0-2 0.9-2 2C32.7 70.2 33.6 71 34.6 71z M30 83.2l0.9-2.7h-5.6l-1.4 0 c0 0 0.3-0.5 0.6-1.1l6.4-11.1v-2.4h-10L20 68.7h5.2c1 0 1.4 0 1.4 0s-0.2 0.6-0.7 1.4l-6.3 10.8v2.3H30z"></path></svg>
+                    </div>
+                </div>   
+            </div>
+            <div class="upper-nav">
+                <div class="container">
+                    <div class="left-nav">
+                        <div class="menu">Buy</div>
+                        <div class="menu">Rent</div>
+                        <div class="menu">Sell</div>
+                        <div class="menu">Mortgages</div>
+                        <div class="menu">Agent Finder</div>
+                        <div class="menu">More</div>
+                    </div>
+                    <div class="right-nav">
+                        <div class="menu">List Your Rental</div>
+                        <div class="menu">Advertise</div>
+                        <div class="menu"><i class="fa fa-user"></i></div>
+                        <div class="menu"><i class="fa fa-question"></i></div>
+                    </div>  
+                </div>
+            </div>
+            <div class="below-nav">
+                <div class="menu-wrapper">
+                    <div class="inner">
+                        <div class="menu">contact agent</div>
+                        <div class="menu"><i class="fa fa-heart"></i> save</div>
+                        <div class="menu"><i class="fas fa-envelope"></i></i> share</div>
+                        <div class="menu">more <i class="fas fa-caret-down"></i></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="middle-bar">
+            <div class="inner">
+                <div class="bar">Public View</div>
+                <div class="right-menu">
+                    <div class="menu">nevada</div>
+                    <div class="menu">incline village</div>
+                    <div class="menu">89402</div>
+                    <div class="menu">300 State Route 28</div>
+                </div>
+            </div>   
+        </div>
+    </header>
+
+	<!-- image-carousel-top -->
+	<div id="carousel"></div>
+	<!-- body01 -->
+    <div id="root"></div>
+    <!-- body02(calculator) -->
+    <div id="app"></div>
+    <!-- bottom-carousel-pics -->
+    <div id="homes"></div>
+		
+    <footer>
+        <div class="upper-wrapper">
+            <div class="upper-footer">
+                <div class="detail">
+                    <div class="column">
+                        <div class="title">NEARBY CITIES</div>
+                        <div>Cold Springs Real Estate</div>
+                        <div>Empire Real Estate</div>
+                        <div>Gerlach Real Estate</div>
+                        <div>Incline Village Real Estate</div>
+                        <div>Nixon Real Estate</div>
+                    </div>
+                    <div class="column">
+                        <div class="title">NEARBY NEIGHBORHOODS</div>
+                        <div>Incline Village-Crystal Bay Real</div>
+                        <div>Estate</div>
+                    </div>
+                    <div class="column">
+                        <div class="title">NEARBY ZIP CODES</div>
+                        <div>89402 Real Estate</div>
+                        <div>89402 Real Estate</div>
+                        <div>89402 Real Estate</div>
+                        <div>89402 Real Estate</div>
+                        <div>89402 Real Estate</div>
+                    </div>
+                    <div class="column">
+                        <div class="title">OTHER INCLINE VILLAGE TOPICS</div>
+                        <div>Apartments for Rent in 89402</div>
+                        <div>Houses for Sale in 89402</div>
+                        <div>Houses for Rent in 89402</div>
+                        <div>89402 Real Estate</div>
+                        <div>Incline Village Condos</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="see-more">
+                <div class="pop">See More</div>
+            </div>
+        </div>
+        <div class="below-footer">
+            <div class="refs">
+                <div>ABOUT</div>
+                <div>ZESTIMATES</div>
+                <div>RESEARCH</div>
+                <div>CAREERS</div>
+                <div>HELP</div>
+                <div>ADVERTISE</div>
+                <div>TERMS OF USE & PRIVACY</div>
+                <div>AD CHOICE</div>
+                <div>COOKIE PREFERENCES</div>
+                <div>BLOG</div>
+                <div>DATA SCIENCE</div>
+                <div>MOBILE APPS</div>
+            </div>
+            <div class="contact">
+                <i class="fas fa-warehouse"></i>
+                <div>© 2006-2018 Zillow</div>
+                <div>follow us</div>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-google-plus"></i>
+            </div>
+        </div>
+    </footer>
+	<script src="https://s3-us-west-1.amazonaws.com/fec-zillow/bundle.js"></script>
+    <script src="https://s3.amazonaws.com/fec-zillow-proxy/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/zillow-proxy/bundle.js"></script>
+    <script src="https://s3-us-west-1.amazonaws.com/fcc-nearby-homes/bundle.js"></script>
+</body>
+
+</html>
