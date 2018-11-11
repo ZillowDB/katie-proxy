@@ -1,0 +1,6 @@
+.git
+node_modules
+build
+design.css
+design.scss
+styles.css

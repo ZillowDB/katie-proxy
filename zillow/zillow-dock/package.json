@@ -1,0 +1,18 @@
+{
+  "name": "zillow-dock",
+  "version": "1.0.0",
+  "description": "intergrated version of FEC project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javier Huh",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "http-proxy": "^1.17.0",
+    "mongoose": "^5.3.11",
+    "nodemon": "^1.18.6"
+  }
+}

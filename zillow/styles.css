@@ -84,11 +84,9 @@ body {
 
 .nearby-homes-list {
   display: grid;
-  grid-auto-flow: column;
   grid-gap: 10px;
-  margin: 30px;
+  margin: 30px 30px 30px 22px;
   min-width: 360px;
-  overflow-x: hidden;
   grid-template-columns: 50% 50%;
 }
 
@@ -315,7 +313,7 @@ li.photo-count {
 
 .like-button {
   content: '\f004';
-  left: 270px;
+  right: 46px;
   font-size: 34px;
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: #fff;

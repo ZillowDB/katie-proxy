@@ -1,0 +1,141 @@
+.Form__doubleAmountInputLg___1hndw{
+    vertical-align: bottom !important;
+}
+.Form__inputLg___3Jx5D{
+    height: 25px !important;
+}
+.collapsible-title-collapsed:after{
+    display: block !important;
+    content: '' !important;
+    position: absolute !important;
+    height: 10px !important;
+    width: 10px !important;
+    cursor: pointer !important;
+    transform: rotate(45deg) !important;
+    border-top: 4px solid #444 !important;
+    border-left: 4px solid #444 !important;
+    right: 6px !important;
+}
+.collapsible-title-collapsible:after{
+    display: block !important;
+    content: '' !important;
+    position: absolute !important;
+    height: 10px !important;
+    width: 10px !important;
+    cursor: pointer !important;
+    transform: rotate(223deg) !important;
+    border-top: 4px solid #444 !important;
+    border-left: 4px solid #444 !important;
+    right: 6px !important;
+}
+@media (max-width: 768px){
+    header nav .upper-nav .container .left-nav{
+        display: none !important;
+    }
+    header nav .upper-nav .container{
+        justify-content: flex-end !important;
+    }
+    .middle-bar{
+        display: none !important;
+    }
+    #carousel{
+        margin-bottom: 20px !important;
+        margin-top: -1px !important;
+        height: 246px !important;
+        overflow: hidden !important;
+    }
+    #root, #app, #homes{
+        padding: 0 2% !important;
+    }
+    footer .upper-wrapper{
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+}
+
+@media (max-width: 414px){
+    #carousel{
+        margin-bottom: 20px !important;
+        margin-top: -1px !important;
+        height: 246px !important;
+        overflow: hidden !important;
+    }
+    header nav .upper-nav .container .right-nav .menu:nth-child(1), header nav .upper-nav .container .right-nav .menu:nth-child(2), header nav .below-nav .menu-wrapper .inner .menu:nth-child(1), header nav .below-nav .menu-wrapper .inner .menu:nth-child(4), .SubSection__gridItemSm___3neSM{
+        display: none !important;
+    }
+    .App__zlwLg___3Uo8I, .collapsible-title-inner-layout{
+        width: 100% !important;
+    }
+    .collapsible-title-collapsed{
+        font-size: 1.1em !important;
+        font-family: Open-sans sans-serif !important;
+        margin-left: 2% !important;
+        text-indent: 3px !important;
+        margin-right: 2% !important;
+    }
+    h4.nearby-homes{
+        margin: 10px 0 2% !important;
+    }
+    .MortgageSection__collapsible___1fFNm{
+        font-size: 1.1em !important;
+        font-family: Open-sans sans-serif !important;
+    }
+    .SubSection__gridContainer___2VjjZ{
+        min-width: 0 !important;
+        display: block !important;
+    }
+    .Button__qualifiedButton___1FSUX{
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    #homes{
+        padding: 0 !important;
+    }
+    .nearby-homes-list{
+        grid-gap: 5px !important;
+        margin: 20px 0 0 !important;
+    }
+    .like-button{
+        font-size: 1.1em !important;
+        top: 1px !important;
+        right: 22px !important;
+    }
+    footer{
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    footer .upper-wrapper{
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+        padding-top: 2% !important;
+    }
+    footer .upper-footer .detail{
+        flex-flow: row wrap !important;
+    }
+    footer .upper-footer .detail .column{
+        width: 100% !important;
+    }
+    .carousel-right-arrow{
+        right: 7px !important;
+    }
+    footer .below-footer .contact{
+        padding: 2em 2% !important;
+        font-size: 11px !important;
+    }
+    .Carousel__carouselContainer___1nkL0{
+        width: 100% !important;
+        display: block !important;
+        height: 300px !important;
+    }
+    .LeftArrow__leftArrowBlock___1hBbu, .RightArrow__rightArrowBlock___2IagH{
+        display: none !important;
+    }
+    .collapsible-title-collapsible{
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+        font-size: 1.1em !important;
+        font-family: Open-sans sans-serif !important;
+        text-indent: 6px !important;
+        margin: 0 2% !important;
+    }
+}

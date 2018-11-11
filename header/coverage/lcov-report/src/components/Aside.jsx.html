@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/Aside.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/components</a> Aside.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">45.45% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>20/44</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">34.21% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>13/38</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">38.46% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">52.63% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>20/38</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+import ReactDOM from 'react-dom';
+import Modal from './Modal.jsx';
+import axios from 'axios';
+&nbsp;
+&nbsp;
+class Aside extends React.Component {
+	constructor(props) {
+    super(props);
+		this.state = {
+			nameBool: true,
+			phoneBool: true,
+			mailBool: true,
+			name: '',
+			phone: '',
+			mail: '',
+			starpercent: 10,
+			starRate: 1,
+			sendReqOk: false,
+			sendReqOkData: ''
+		}
+		this.inputErrorChecker = this.inputErrorChecker.bind(this);
+		this.inputRouter = this.inputRouter.bind(this);
+		this.sendBuyerInfo = this.sendBuyerInfo.bind(this);
+		this.closeHandler = this.closeHandler.bind(this);
+	}
+&nbsp;
+	componentDidMount(){
+		let number = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+		let rate = Math.floor(number/20);
+		this.setState({
+			starpercent: number,
+			starRate: rate
+		})
+	}
+&nbsp;
+<span class="fstat-no" title="function not covered" >	in</span>putRouter(e){
+		let name = <span class="cstat-no" title="statement not covered" >e.target.name;</span>
+		let val = <span class="cstat-no" title="statement not covered" >e.target.value;</span>
+<span class="cstat-no" title="statement not covered" >		if(name === 'name') <span class="cstat-no" title="statement not covered" >this.setState({ name: val }, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputErrorChecker())</span>;</span></span>
+<span class="cstat-no" title="statement not covered" >		if(name === 'phone') <span class="cstat-no" title="statement not covered" >this.setState({ phone: val }, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputErrorChecker())</span>;</span></span>
+<span class="cstat-no" title="statement not covered" >		if(name === 'mail') <span class="cstat-no" title="statement not covered" >this.setState({ mail: val }, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.inputErrorChecker())</span>;</span></span>
+	}
+&nbsp;
+<span class="fstat-no" title="function not covered" >	in</span>putErrorChecker(){
+<span class="cstat-no" title="statement not covered" >		if(this.state.name.length &lt; 3){</span>
+<span class="cstat-no" title="statement not covered" >			this.setState({nameBool: false});</span>
+		} else {
+<span class="cstat-no" title="statement not covered" >			this.setState({nameBool: true});</span>
+		}
+<span class="cstat-no" title="statement not covered" >		if(this.state.phone.length &lt; 10 || !!isNaN(Number(this.state.phone))){</span>
+<span class="cstat-no" title="statement not covered" >			this.setState({phoneBool: false});</span>
+		} else {
+<span class="cstat-no" title="statement not covered" >			this.setState({phoneBool: true});</span>
+		}
+<span class="cstat-no" title="statement not covered" >		if(this.state.mail.length &lt; 5 || !this.state.mail.includes('@') || !this.state.mail.includes('.')){</span>
+<span class="cstat-no" title="statement not covered" >			this.setState({mailBool: false});</span>
+		} else {
+<span class="cstat-no" title="statement not covered" >			this.setState({mailBool: true});</span>
+		}
+	}
+&nbsp;
+	getNow(now){
+	  let stack = [];
+	  for(let i = 0; i &lt; 5; i++){
+	    stack.push(now.split(' ')[i]);
+	  }
+	  return stack.join(' ');
+	}
+&nbsp;
+	sendBuyerInfo(e){
+		e.preventDefault();
+		let data = {
+			name: this.state.name,
+			phone: this.state.phone,
+			mail: this.state.mail,
+			timeStamp: this.getNow(Date(Date.now()))
+		}
+		<span class="missing-if-branch" title="if path not taken" >I</span>if(!this.state.nameBool || !this.state.phoneBool || !this.state.mailBool){
+<span class="cstat-no" title="statement not covered" >			alert('Wrong Format!')</span>
+		} else {
+			axios.post('/api/user-request', {data})
+				.then(<span class="fstat-no" title="function not covered" >re</span>s =&gt; {
+<span class="cstat-no" title="statement not covered" >					this.sendReqOkData(res.data);</span>
+				})
+		}
+	}
+<span class="fstat-no" title="function not covered" >	cl</span>oseHandler(){
+<span class="cstat-no" title="statement not covered" >		this.setState({</span>
+			sendReqOk: false,
+			sendReqOkData: ''
+		})
+	}
+<span class="fstat-no" title="function not covered" >	se</span>ndReqOkData(data){
+<span class="cstat-no" title="statement not covered" >		this.setState({</span>
+			sendReqOk: true,
+			sendReqOkData: data
+		})
+	}
+	
+	render(){
+		const defaultText = `I am interested in ${this.props.data.address}.`
+		const starWidth = {
+			width: `${this.state.starpercent}%`
+		}
+		return(
+			&lt;aside&gt;
+		    &lt;article&gt;
+		      &lt;div className="head"&gt;
+		        &lt;div className="title"&gt;contact agent&lt;/div&gt;
+		        &lt;div className="agent-wrapper"&gt;
+			        &lt;div className="agent-info"&gt;
+			          &lt;div className="photo-wrapper"&gt;
+			          	&lt;img src="https://picsum.photos/200" alt="agent-pic" /&gt;
+			          &lt;/div&gt;
+			          &lt;div className="text-wrapper"&gt;
+			            &lt;span className="name"&gt;Susan&lt;/span&gt;
+			            &lt;span className="star"&gt;
+			            	&lt;span className="star-wrapper"&gt;
+				            	&lt;span className="star-pack-empty"&gt;&lt;/span&gt;
+				            	&lt;span className="star-pack" style={starWidth}&gt;&lt;/span&gt;
+			            	&lt;/span&gt;
+			            	(
+			            	&lt;span className="star-number"&gt;{this.state.starRate}&lt;/span&gt;
+			              )
+			            &lt;/span&gt;
+			            &lt;span className="recent-sale"&gt;
+			              &lt;span className="tag"&gt;0&lt;/span&gt; Recent sale
+			            &lt;/span&gt;
+			            &lt;div className="company-name"&gt;
+			              chase international
+			            &lt;/div&gt;
+			            &lt;div className="phone"&gt;
+			              (775) 588-6130
+			            &lt;/div&gt;
+			          &lt;/div&gt;
+			        &lt;/div&gt;
+			        &lt;div className="agent-tag"&gt;
+			          &lt;span&gt;agent&lt;/span&gt;
+			        &lt;/div&gt;
+		        &lt;/div&gt;
+		      &lt;/div&gt;
+		      &lt;div className="body"&gt;
+		        &lt;form onSubmit={this.sendBuyerInfo}&gt;
+		        	&lt;div className="input-wrapper"&gt;
+			          &lt;input type="text" className={!this.state.nameBool ? <span class="branch-0 cbranch-no" title="branch not covered" >'error-style' </span>: ''} onChange={this.inputRouter} name="name" placeholder="Your Name"/&gt;
+			          	&lt;i className="fas fa-user"&gt;&lt;/i&gt;
+			          {
+			          	!this.state.nameBool ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;div className="error-msg"&gt;Please enter your name.&lt;/div&gt; </span>: ''
+			          }
+							&lt;/div&gt;
+		          &lt;div className="input-wrapper"&gt;
+			          &lt;input type="text" className={!this.state.phoneBool ? <span class="branch-0 cbranch-no" title="branch not covered" >'error-style' </span>: ''} onChange={this.inputRouter} name="phone" placeholder="Phone"/&gt;
+			          	&lt;i className="fas fa-phone"&gt;&lt;/i&gt;
+			          {
+			          	!this.state.phoneBool ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;div className="error-msg"&gt;Please enter a valid phone number, beginning with + for international numbers.&lt;/div&gt; </span>: ''
+			          }
+		          &lt;/div&gt;
+		          &lt;div className="input-wrapper"&gt;
+			          &lt;input type="text" className={!this.state.mailBool ? <span class="branch-0 cbranch-no" title="branch not covered" >'error-style' </span>: ''} onChange={this.inputRouter} name="mail" placeholder="Email"/&gt;
+			          	&lt;i className="fas fa-envelope"&gt;&lt;/i&gt;
+			          {
+			          	!this.state.mailBool ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;div className="error-msg"&gt;Please enter a valid email address.&lt;/div&gt; </span>: ''
+			          }
+		          &lt;/div&gt;
+		          	&lt;textarea cols="30" rows="10" defaultValue={!this.props ? <span class="branch-0 cbranch-no" title="branch not covered" >'loading...' </span>: defaultText}&gt;&lt;/textarea&gt;		          
+		        &lt;div className="btn-container"&gt;
+		          &lt;input type="submit" value="Contact-Agent" /&gt;
+		        &lt;/div&gt;
+		        &lt;/form&gt;
+		      &lt;/div&gt;
+		      &lt;div className="footer"&gt;
+		        &lt;p&gt;
+		          By pressing Contact Agent, you agree that Zillow Group and &lt;span&gt;real estate professionals&lt;/span&gt; may call/text you about your inquiry, which may involve use of automated means and prerecorded/artificial voices. You don't need to consent as a condition of buying any property, goods or services. Message/data rates may apply. You also agree to our &lt;a href="#"&gt;Terms of Use&lt;/a&gt;. Zillow does not endorse any real estate professionals.
+		        &lt;/p&gt;
+		        &lt;p className="last"&gt;
+		        	&lt;a href="#"&gt;Learn how to appear as the agent above&lt;/a&gt;
+		        &lt;/p&gt;
+		      &lt;/div&gt;
+		    &lt;/article&gt;
+		    {
+		    	this.state.sendReqOk ? &lt;Modal closeHandler = {this.closeHandler} data = {this.state.sendReqOkData}/&gt; : ''
+		    }
+		  &lt;/aside&gt;
+		)
+	}
+}
+&nbsp;
+export default Aside;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Nov 03 2018 16:39:46 GMT-0700 (GMT-07:00)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

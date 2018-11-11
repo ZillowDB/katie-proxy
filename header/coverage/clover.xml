@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1541288386208" clover="3.2.0">
+  <project timestamp="1541288386208" name="All files">
+    <metrics statements="96" coveredstatements="52" conditionals="62" coveredconditionals="17" methods="47" coveredmethods="14" elements="205" coveredelements="83" complexity="0" loc="96" ncloc="96" packages="3" files="16" classes="16">
+      <package name="src">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <file name="setupTests.js" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/setupTests.js">
+          <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="3" count="4" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components">
+        <metrics statements="81" coveredstatements="44" conditionals="62" coveredconditionals="17" methods="40" coveredmethods="14"/>
+        <file name="Aside.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/Aside.jsx">
+          <metrics statements="38" coveredstatements="20" conditionals="38" coveredconditionals="13" methods="13" coveredmethods="5"/>
+          <line num="9" count="4" type="stmt"/>
+          <line num="10" count="4" type="stmt"/>
+          <line num="22" count="4" type="stmt"/>
+          <line num="23" count="4" type="stmt"/>
+          <line num="24" count="4" type="stmt"/>
+          <line num="25" count="4" type="stmt"/>
+          <line num="29" count="4" type="stmt"/>
+          <line num="30" count="4" type="stmt"/>
+          <line num="31" count="4" type="stmt"/>
+          <line num="38" count="0" type="stmt"/>
+          <line num="39" count="0" type="stmt"/>
+          <line num="40" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="46" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="47" count="0" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="51" count="0" type="cond" truecount="0" falsecount="4"/>
+          <line num="52" count="0" type="stmt"/>
+          <line num="54" count="0" type="stmt"/>
+          <line num="56" count="0" type="cond" truecount="0" falsecount="5"/>
+          <line num="57" count="0" type="stmt"/>
+          <line num="59" count="0" type="stmt"/>
+          <line num="64" count="3" type="stmt"/>
+          <line num="65" count="3" type="stmt"/>
+          <line num="66" count="15" type="stmt"/>
+          <line num="68" count="3" type="stmt"/>
+          <line num="72" count="3" type="stmt"/>
+          <line num="73" count="3" type="stmt"/>
+          <line num="79" count="3" type="cond" truecount="4" falsecount="1"/>
+          <line num="80" count="0" type="stmt"/>
+          <line num="82" count="3" type="stmt"/>
+          <line num="84" count="0" type="stmt"/>
+          <line num="89" count="0" type="stmt"/>
+          <line num="95" count="0" type="stmt"/>
+          <line num="102" count="11" type="stmt"/>
+          <line num="103" count="11" type="stmt"/>
+          <line num="106" count="11" type="stmt"/>
+        </file>
+        <file name="DetailHead.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/DetailHead.jsx">
+          <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="9" count="3" type="stmt"/>
+          <line num="12" count="3" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="22" count="3" type="stmt"/>
+        </file>
+        <file name="FollowDetails.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/FollowDetails.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="11" count="1" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+        </file>
+        <file name="FollowFact.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/FollowFact.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+        </file>
+        <file name="FollowingContents.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/FollowingContents.jsx">
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="7" count="3" type="stmt"/>
+        </file>
+        <file name="Modal.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/Modal.jsx">
+          <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="3" type="stmt"/>
+        </file>
+        <file name="PopupCal.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/PopupCal.jsx">
+          <metrics statements="28" coveredstatements="13" conditionals="18" coveredconditionals="1" methods="19" coveredmethods="5"/>
+          <line num="5" count="1" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
+          <line num="16" count="1" type="stmt"/>
+          <line num="20" count="2" type="stmt"/>
+          <line num="22" count="2" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+          <line num="29" count="0" type="stmt"/>
+          <line num="34" count="0" type="stmt"/>
+          <line num="36" count="0" type="stmt"/>
+          <line num="41" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="42" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="43" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="47" count="0" type="stmt"/>
+          <line num="48" count="0" type="stmt"/>
+          <line num="49" count="0" type="stmt"/>
+          <line num="51" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="52" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="53" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="54" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="55" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="60" count="2" type="stmt"/>
+          <line num="61" count="2" type="stmt"/>
+          <line num="62" count="2" type="stmt"/>
+          <line num="63" count="2" type="stmt"/>
+          <line num="65" count="2" type="stmt"/>
+          <line num="67" count="2" type="stmt"/>
+          <line num="73" count="6" type="stmt"/>
+          <line num="160" count="2" type="stmt"/>
+        </file>
+        <file name="Tooltip.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/Tooltip.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="src.components.followDetails">
+        <metrics statements="14" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <file name="ActivityOnZillow.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/followDetails/ActivityOnZillow.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+        </file>
+        <file name="Construction.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/followDetails/Construction.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+        </file>
+        <file name="ExteriorFeatures.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/followDetails/ExteriorFeatures.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+        </file>
+        <file name="InteriorFeatures.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/followDetails/InteriorFeatures.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+        </file>
+        <file name="Other.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/followDetails/Other.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="4" count="1" type="stmt"/>
+          <line num="5" count="0" type="stmt"/>
+        </file>
+        <file name="Parking.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/followDetails/Parking.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+        </file>
+        <file name="SpaceAndAmenities.jsx" path="/Users/woobinhuh/Documents/hrsf104/frontend-capstone/detailed-part/client/src/components/followDetails/SpaceAndAmenities.jsx">
+          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+          <line num="3" count="1" type="stmt"/>
+          <line num="4" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>

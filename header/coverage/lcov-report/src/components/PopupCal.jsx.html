@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/components/PopupCal.jsx</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">src/components</a> PopupCal.jsx
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">29.55% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>13/44</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">5.56% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">26.32% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">46.43% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>13/28</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span></td><td class="text"><pre class="prettyprint lang-js">import React from 'react';
+&nbsp;
+class PopupCal extends React.Component {
+	constructor(props){
+		super(props);
+		this.state = {
+			initPrice: this.props.price,
+			interestRate: 4.619,
+			loanTerm: 30,
+			loanTermWord: 'Fixed30Year',
+			downPaymentPercent: 10,
+			downPayment: '',
+			resultPrice: '',
+		}
+&nbsp;
+		this.onChangeRouter = this.onChangeRouter.bind(this);
+	}
+&nbsp;
+	componentDidMount(){
+		this.setState(
+			{downPayment: this.state.initPrice * 0.01 * this.state.downPaymentPercent},
+			() =&gt; this.paymentCalculator()
+		)
+	}
+&nbsp;
+<span class="fstat-no" title="function not covered" >	ch</span>angeDownpaymentPercent(amount){
+<span class="cstat-no" title="statement not covered" >		this.setState(</span>
+			{downPaymentPercent: (amount / this.state.initPrice ) * 100 },
+<span class="fstat-no" title="function not covered" >			()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.paymentCalculator()</span>
+		);
+	}
+&nbsp;
+<span class="fstat-no" title="function not covered" >	ch</span>angeDownpayment(percent){
+<span class="cstat-no" title="statement not covered" >		this.setState(</span>
+			{downPayment: this.state.initPrice * (percent / 100)}, 
+<span class="fstat-no" title="function not covered" >			()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.paymentCalculator()</span>
+		)
+	}
+&nbsp;
+<span class="fstat-no" title="function not covered" >	ch</span>angeLoanTerm(){
+<span class="cstat-no" title="statement not covered" >		if(this.state.loanTermWord === 'Fixed30Year') <span class="cstat-no" title="statement not covered" >this.setState({loanTerm: 30}, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.paymentCalculator())</span>;</span></span>
+		else <span class="cstat-no" title="statement not covered" >if(this.state.loanTermWord === 'Fixed15Year') <span class="cstat-no" title="statement not covered" >this.setState({loanTerm: 15}, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.paymentCalculator())</span>;</span></span>
+		else <span class="cstat-no" title="statement not covered" >if(this.state.loanTermWord === 'ARM5') <span class="cstat-no" title="statement not covered" >this.setState({loanTerm: 27}, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.paymentCalculator())</span>;</span></span>
+	}
+&nbsp;
+<span class="fstat-no" title="function not covered" >	on</span>ChangeRouter(e){
+		let value = <span class="cstat-no" title="statement not covered" >e.target.value;</span>
+		let name = <span class="cstat-no" title="statement not covered" >e.target.name;</span>
+		let toNum = <span class="cstat-no" title="statement not covered" >Number(value.replace(/,/g, ''));</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >		if(name === 'homePrice') <span class="cstat-no" title="statement not covered" >this.setState({ initPrice: toNum }, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.paymentCalculator())</span>;</span></span>
+<span class="cstat-no" title="statement not covered" >		if(name === 'rate') <span class="cstat-no" title="statement not covered" >this.setState({ interestRate: value }, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.paymentCalculator())</span>;</span></span>
+<span class="cstat-no" title="statement not covered" >		if(name === 'downPayment') <span class="cstat-no" title="statement not covered" >this.setState({ downPayment: toNum }, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.changeDownpaymentPercent(toNum))</span>;	</span></span>
+<span class="cstat-no" title="statement not covered" >		if(name === 'downPaymentPercent') <span class="cstat-no" title="statement not covered" >this.setState({ downPaymentPercent: value }, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.changeDownpayment(value))</span>;</span></span>
+<span class="cstat-no" title="statement not covered" >		if(name === 'loanTerm') <span class="cstat-no" title="statement not covered" >this.setState({ loanTermWord: value }, <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.changeLoanTerm())</span>;</span></span>
+		
+	}
+&nbsp;
+	paymentCalculator(){
+		let price = this.state.initPrice;
+		let rate = this.state.interestRate;
+		let years = this.state.loanTerm;
+		let downPayment = this.state.downPayment;
+&nbsp;
+		let result = (price - downPayment) * (1 + (0.01 * rate * years));
+&nbsp;
+		this.setState({
+			resultPrice: result
+		})
+	}
+&nbsp;
+	render(){
+		return (
+			&lt;div&gt;
+		    &lt;div className="estimate"&gt;${Math.floor((this.state.resultPrice / (12 * this.state.loanTerm))).toLocaleString()}/mo&lt;/div&gt;
+		    &lt;div className="launch"&gt;
+		        &lt;span className="launch-btn" onClick={this.props.handleClick}&gt;&lt;/span&gt;
+		        &lt;i className="fas fa-calculator"&gt;&lt;/i&gt;
+		        &lt;span className="arrow"&gt;&lt;/span&gt;
+		        {
+		        	this.props.isCal ? 
+			        &lt;div id="popupCal" className="popup-cal"&gt;
+			            &lt;div className="cal-title"&gt;
+			                Estimated Monthly Payment
+			            &lt;/div&gt;
+			            &lt;div className="cal-body"&gt;
+			                &lt;div className="banner"&gt;
+			                    &lt;div className="banner-text"&gt;
+			                        Your payment:
+			                        &lt;b&gt;
+						                	&lt;span className="cal-payment"&gt; ${Math.floor((this.state.resultPrice / (12 * this.state.loanTerm))).toLocaleString()}&lt;/span&gt;/mo
+						                &lt;/b&gt;
+			                    &lt;/div&gt;
+			                    &lt;div className="cal-btn"&gt;
+			                        &lt;a href="#"&gt;Get pre-qualified&lt;/a&gt;
+			                    &lt;/div&gt;
+			                &lt;/div&gt;
+			                &lt;div className="sub-text"&gt;
+			                    Estimated taxes &amp; insurance of ${Math.floor(this.state.initPrice * 0.0034).toLocaleString()} are not included.
+			                &lt;/div&gt;
+			            &lt;/div&gt;
+			            &lt;div className="cal-form"&gt;
+			                &lt;div className="inner-cal-form"&gt;
+			                    &lt;div className="acol"&gt;
+			                        &lt;div className="form-field"&gt;
+			                            &lt;label forhtml="homePrice"&gt;Home Price&lt;/label&gt;
+			                            &lt;div className="cal-each-input"&gt;
+			                                &lt;div className="text-left"&gt;$ &lt;/div&gt;
+			                                &lt;input className="left-type" type="text" name="homePrice" value={this.state.initPrice.toLocaleString()} onChange={this.onChangeRouter} /&gt;
+			                            &lt;/div&gt;
+			                        &lt;/div&gt;
+			                    &lt;/div&gt;
+			                    &lt;div className="bcol"&gt;
+			                        &lt;div className="form-field split"&gt;
+			                            &lt;label forhtml="homePrice"&gt;Down payment&lt;/label&gt;
+			                            &lt;div className="cal-each-input"&gt;
+			                                &lt;div className="text-left"&gt;$&lt;/div&gt;
+			                                &lt;input className="left-type" type="text" name="downPayment" value={this.state.downPayment.toLocaleString()} onChange={this.onChangeRouter} /&gt;
+			                            &lt;/div&gt;
+			                            &lt;div className="cal-each-input"&gt;
+			                                &lt;div className="text-right"&gt;%&lt;/div&gt;
+			                                &lt;input className="right-type" type="text" name="downPaymentPercent" value={this.state.downPaymentPercent} onChange={this.onChangeRouter} /&gt;
+			                            &lt;/div&gt;
+			                        &lt;/div&gt;
+			                    &lt;/div&gt;
+			                    &lt;div className="acol"&gt;
+			                        &lt;div className="form-field"&gt;
+			                            &lt;label forhtml="homePrice"&gt;Loan term&lt;/label&gt;
+			                            &lt;div className="cal-each-input"&gt;
+			                                &lt;div className="text-right triangle"&gt;&lt;/div&gt;
+			                                &lt;select className="right-type" name="loanTerm" value={this.state.loanTermWord} onChange={this.onChangeRouter}&gt;
+			                                    &lt;option value="Fixed30Year"&gt;30-year fixed&lt;/option&gt;
+			                                    &lt;option value="Fixed15Year"&gt;15-year fixed&lt;/option&gt;
+			                                    &lt;option value="ARM5"&gt;5/1 ARM&lt;/option&gt;
+			                                &lt;/select&gt;
+			                            &lt;/div&gt;
+			                        &lt;/div&gt;
+			                    &lt;/div&gt;
+			                    &lt;div className="bcol"&gt;
+			                        &lt;div className="form-field"&gt;
+			                            &lt;label forhtml="homePrice"&gt;Interest rate&lt;/label&gt;
+			                            &lt;div className="cal-each-input"&gt;
+			                                &lt;div className="text-right"&gt;%&lt;/div&gt;
+			                                &lt;input className="right-type" type="text" name="rate" value={this.state.interestRate} onChange={this.onChangeRouter} /&gt;
+			                            &lt;/div&gt;
+			                        &lt;/div&gt;
+			                    &lt;/div&gt;
+			                &lt;/div&gt;
+			                &lt;div className="advanced"&gt;Advanced&lt;/div&gt;
+			            &lt;/div&gt;
+			        &lt;/div&gt; : <span class="branch-1 cbranch-no" title="branch not covered" >''</span>
+		        }
+		    &lt;/div&gt;
+		&lt;/div&gt;
+		)
+	}
+}
+&nbsp;
+export default PopupCal;
+module.exports =  PopupCal;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Nov 03 2018 16:39:46 GMT-0700 (GMT-07:00)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
